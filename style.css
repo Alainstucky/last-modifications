@@ -1,0 +1,246 @@
+
+#navbar {
+    display:grid;
+    min-height:  100px;
+    grid-auto-flow: column;
+    background-color: #9ac299;
+    grid-gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#logo {
+    display: grid;
+    justify-content: start;
+    align-content: center;
+}
+
+#links {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+}
+a {
+    text-decoration: none;
+    font-family: "Arial Rounded MT Bold", fantasy ;
+    color: #521e2f;
+}
+a:hover {
+    color: #82a3c2;
+}
+
+
+@media only screen and (max-width: 900px){
+     #links {
+       display: none;
+
+    }
+
+
+
+}
+@media only screen and (min-width: 800px)
+{
+    span {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#main-page {
+    display: grid;
+    padding: 5px ;
+    justify-content: center;
+
+}
+.wrapper {
+    display: grid;
+    justify-content: space-evenly;
+    padding-bottom: 5px;
+    padding-bottom:  100px;
+
+}
+.layers {
+
+    justify-content: space-evenly;
+   display: grid;
+    grid-auto-flow: row;
+
+
+}
+.firstone {
+    width: 320px;
+    height: 320px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.secondone {
+    width: 320px;
+    height: 320px;
+    padding-left:20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.thirdone {
+    width: 320px;
+    height: 320px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#footer {
+    display: grid;
+    background-color: #9ac299;
+    grid-gap: 1.5em;
+    padding: 0 40px;
+    box-shadow: #e9ebee;
+    overflow: hidden;
+}
+#right-footer {
+    display: grid;
+    text-align: right;
+}
+#left-footer {
+    dispaly: grid;
+    text-algin: left;
+
+
+
+}
+
+#collection {
+    display: grid;
+    padding: 10px;
+
+    border-style: dotted;
+    grid: 150px / auto auto auto ;
+    justify-content: space-evenly;
+    grid-column-gap: 5px;
+    grid-row-gap: 70px;
+
+
+
+
+}
+
+
+.products1,
+.products2,
+.products3,
+.products4,
+.products5{
+    display: grid;
+    align-items: inherit;
+    padding-top: 40px;
+    justify-content: space-evenly;
+    border: green;
+}
+@media (max-width: 900px) {
+    #collection{
+        grid-template-columns: auto;
+
+    }
+}
+@media (max-width: 768px) {
+    .products,
+    .products1,
+    .products2,
+    .products3,
+    .products4,
+    .products5 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+
+    }
+}
+
+.myForm {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-auto-flow: row dense;
+    grid-gap: .8em;
+    background: #82a3c2;
+    padding: 1.2em;
+    padding-top: 50px;
+}
+.myForm > label  {
+    grid-column: 1;
+    grid-row: auto;
+}
+.myForm > input,
+.myForm > button {
+    grid-column: 2;
+    grid-row: auto;
+    padding: 1em;
+    border: none;
+}
+.myForm textarea {
+    min-height: calc(100% - 2em);
+    width: 100%;
+    border: none;
+    grid-column-end: auto;
+}
+#comment-box {
+    grid-column: 3;
+    grid-row: span 3;
+}
+.myForm > button {
+    grid-column: 2/ 3;
+    height: 60px;
+    width: 60px;
+
+}
+#Boxen {
+    padding: 50px;
+    grid-column: 3 / 4;
+    text-align:center;
+}
+
